@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <!-- HINT:
+  
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+  body{
+    background-color: chocolate;
+  }
+    .container {
+      background-color: yellow;
+      width: 350px;
+      height: 200px;
+      position: relative;
+      
+    }
+    img{
+      left: -1rem;
+      top: 3rem;
+      position: absolute;
+      width: 150px;
+      height: 100px;
+      z-index: 2;
+      transform: rotate(90deg);
+    
+    }
+
+    .red {
+      background-color: red;
+      bottom: 0;
+       width: 100%;
+      height: 50%;
+    }
+      
+    .blue {
+      background-color: blue;
+      width: 100%;
+      height: 50%;
+      top: 0;
+    }
+      
+    .white {
+      
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 150px solid white;
+      border-bottom: 100px solid transparent;
+      border-top: 100px solid transparent;
+      z-index: ;
+    }
+    
+    
+    .container div{
+     position: absolute;
+      
+       
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="white"></div>
+    <img src="img.png" alt="flag">
+    
+    
+  </div>
+  
+</body>
+
+</html>
